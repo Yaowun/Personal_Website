@@ -56,3 +56,53 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 19ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 5216)
 
 
+Started GET "/" for ::1 at 2023-03-31 00:03:26 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 516)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 329)
+  Rendered home/_footer.html.erb (Duration: 0.4ms | Allocations: 203)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 1633)
+Completed 200 OK in 34ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 6796)
+
+
+Started GET "/" for ::1 at 2023-03-31 00:03:28 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 84)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 341)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 688)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProjects (20230330161506)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "projects" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "link" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" ORDER BY "projects"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (146.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (96.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProjects (20230330162326)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "projects" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "link" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230330162326"]]
+  [1m[36mTRANSACTION (88.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-03-30 16:23:45.330937"], ["updated_at", "2023-03-30 16:23:45.330937"]]
+  [1m[36mTRANSACTION (123.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (0.7ms)[0m  [1m[32mINSERT INTO "projects" ("title", "description", "link", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "南大西洋異常區分析"], ["description", "本專案使用 MATLAB 程式語言，利用 Aerospace Toolbox 的 igrfmagm 函數獲取 IGRF 全球地磁資料，繪製全球地表磁場隨時間之變化並標示出南大西洋異常區 （South Atlantic Anomaly, SAA）。"], ["link", "https://github.com/Yaowun/SAA_IGRF"], ["created_at", "2023-03-30 16:25:24.252912"], ["updated_at", "2023-03-30 16:25:24.252912"]]
+  [1m[36mTRANSACTION (103.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mProject Create (421.5ms)[0m  [1m[32mINSERT INTO "projects" ("title", "description", "link", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "第二型太陽無線電暴特性分析"], ["description", "本專案使用 IDL 程式語言，利用 Wind / WAVES 的 RAD1 及 RAD2 資料分析 2019 年 4 月第二型太陽無線電暴事件，並根據分析結果探討其頻漂特性。"], ["link", "https://github.com/Yaowun/Type_II_Solar_Radio_Bursts"], ["created_at", "2023-03-30 16:27:33.817912"], ["updated_at", "2023-03-30 16:27:33.817912"]]
+  [1m[36mTRANSACTION (145.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" ORDER BY "projects"."id" ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" ORDER BY "projects"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
