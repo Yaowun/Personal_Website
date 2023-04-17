@@ -3191,3 +3191,300 @@ Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 885)
 
 
   [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:30:45 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 873)
+
+
+Started GET "/admin/projects" for 127.0.0.1 at 2023-04-17 17:31:40 +0800
+Processing by Admin::ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/admin/projects/index.html.erb:3
+  Rendered admin/projects/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2189)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 183)
+  Rendered home/_footer.html.erb (Duration: 0.4ms | Allocations: 266)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3124)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 4119)
+
+
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:31:42 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 7ms (ActiveRecord: 0.1ms | Allocations: 1255)
+
+
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:31:43 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 882)
+
+
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:31:43 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 891)
+
+
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:31:43 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 885)
+
+
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:31:43 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 867)
+
+
+Started GET "/admin/projects" for 127.0.0.1 at 2023-04-17 17:31:46 +0800
+Processing by Admin::ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/admin/projects/index.html.erb:3
+  Rendered admin/projects/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2189)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 183)
+  Rendered home/_footer.html.erb (Duration: 0.4ms | Allocations: 266)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3124)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 4135)
+
+
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:31:47 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 7ms (ActiveRecord: 0.1ms | Allocations: 1258)
+
+
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:31:48 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 897)
+
+
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:31:48 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 900)
+
+
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:31:48 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 870)
+
+
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:31:48 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 4ms (ActiveRecord: 0.1ms | Allocations: 882)
+
+
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:31:48 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 873)
+
+
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:31:49 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 879)
+
+
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:31:49 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 897)
+
+
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:31:50 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 903)
+
+
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:31:50 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 897)
+
+
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:31:51 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 885)
+
+
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:31:51 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 879)
+
+
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:31:51 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 885)
+
+
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:33:56 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 891)
+
+
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:33:56 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 876)
+
+
+Started DELETE "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:33:56 +0800
+Processing by Admin::ProjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admin/projects_controller.rb:47:in `set_project'
+No template found for Admin::ProjectsController#destroy, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 873)
+
+
+Started GET "/admin/projects" for 127.0.0.1 at 2023-04-17 17:35:59 +0800
+Processing by Admin::ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/admin/projects/index.html.erb:3
+  Rendered admin/projects/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2090)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 183)
+  Rendered home/_footer.html.erb (Duration: 0.5ms | Allocations: 266)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3025)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 4036)
+
+
+Started GET "/admin/projects" for 127.0.0.1 at 2023-04-17 17:35:59 +0800
+Processing by Admin::ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/admin/projects/index.html.erb:3
+  Rendered admin/projects/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1558)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 45)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1885)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.1ms | Allocations: 2242)
+
+
+Started POST "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:36:00 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/admin/projects/8"):
+  
+Started POST "/admin/projects/8" for 127.0.0.1 at 2023-04-17 17:36:52 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/admin/projects/8"):
+  
+Started GET "/admin/projects" for 127.0.0.1 at 2023-04-17 17:36:54 +0800
+Processing by Admin::ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/admin/projects/index.html.erb:3
+  Rendered admin/projects/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2189)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 183)
+  Rendered home/_footer.html.erb (Duration: 4.0ms | Allocations: 266)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 3124)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.1ms | Allocations: 4080)
+
+
+Started GET "/admin/projects" for 127.0.0.1 at 2023-04-17 17:36:54 +0800
+Processing by Admin::ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/admin/projects/index.html.erb:3
+  Rendered admin/projects/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 1660)
+  Rendered home/_header.html.erb (Duration: 0.1ms | Allocations: 45)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 1987)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.1ms | Allocations: 2344)
+
+
+Started GET "/admin/projects" for 127.0.0.1 at 2023-04-17 17:36:54 +0800
+Processing by Admin::ProjectsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/admin/projects/index.html.erb:3
+  Rendered admin/projects/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1690)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 45)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 2017)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 2351)
+
+

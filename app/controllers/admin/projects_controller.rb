@@ -36,9 +36,9 @@ class Admin::ProjectsController < Admin::AdminController
   end
 
   def destroy
-    # @project.destroy
-    # redirect_to admin_projects_url
-    # flash[:alert] = "project was successfully deleted"
+    @project.destroy
+    redirect_to admin_projects_url
+    flash[:alert] = "project was successfully deleted"
   end
 
   private
