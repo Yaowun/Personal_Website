@@ -1,0 +1,14 @@
+<ul>
+<%= link_to 'New project', new_admin_project_path %>
+<% @projects.each do |project| %>
+  <li>
+    <%= project.title %>
+    <%= link_to 'Show', admin_project_path(project) %>
+    <%= link_to 'Edit', edit_admin_project_path(project) %>
+    <%= button_to 'Delete', admin_project_path(project), method: :delete, data: { turbo_confirm: "Are you sure?" } %>
+  </li>
+<% end %>
+</ul>
+
+<p style="color: green"><%= flash[:notice] %></p>
+<p style="color: red"><%= flash[:alert] %></p>

@@ -1,0 +1,16 @@
+<%= f.label :title, "Title" %>
+<%= f.text_field :title %>
+
+<%= f.label :description, "Description" %>
+<%= f.text_area :description %>
+
+<%= f.label :link, "Link" %>
+<%= f.text_field :link %>
+
+<% if @project.errors.any? %>
+  <ul>
+  <% @project.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+  <% end %>
+  </ul>
+<% end %>
