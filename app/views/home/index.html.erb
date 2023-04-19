@@ -9,15 +9,18 @@
 
 <div class="container p-5 border-bottom" id="project">
   <h1 class="text-center">作品集</h1>
-  <div class="row">
-    <div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="card-link">Card link</a>
-    </div>
-    </div>
+  <div class="row row-cols-auto justify-content-md-center">
+    <% @projects.each do |project| %>
+      <div class="col p-2">
+        <div class="card" style="width: 24rem;">
+          <div class="card-body">
+            <h4 class="card-title"><b><%= project.title %></b></h4>
+            <p class="card-text"><%= project.description %></p>
+            <a href=<%= project.link %> class="card-link">link</a>
+          </div>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>
 
