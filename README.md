@@ -12,8 +12,8 @@ Ruby 3.1.3、Rails 7.0、SQLite3 1.4。
 * 作品集
 * 與我聯絡
 
-![web site](./fig/home.png)
+![home page](./fig/home.png)
 
 點擊與我聯絡區塊右下角的「後台管理」按鈕，可以進入後台頁面對資料庫做 CRUD 操作。
 
-![web site backend](./fig/admin.png)
+![admin page](./fig/admin.png)
