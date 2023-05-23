@@ -1,5 +1,6 @@
 class Admin::ProjectsController < Admin::AdminController
   before_action :set_project, :only => [ :show, :edit, :update, :destroy]
+  layout "layouts/admin_projects"
 
   def index
     @projects = Project.all

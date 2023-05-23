@@ -1,14 +1,57 @@
-<ul>
-<%= link_to 'New project', new_admin_project_path %>
-<% @projects.each do |project| %>
-  <li>
-    <%= project.title %>
-    <%= link_to 'Show', admin_project_path(project) %>
-    <%= link_to 'Edit', edit_admin_project_path(project) %>
-    <%= button_to 'Delete', admin_project_path(project), method: :delete, data: { turbo_confirm: "Are you sure?" } %>
-  </li>
-<% end %>
-</ul>
+<div class="container p-3">
+  <div class="table-wrapper">
+    <div class="table-title align-middle bg-dark p-3 rounded-top">
+      <div class="row">
+        <div class="col-sm-6 text-light">
+          <h4>作品集</h4>
+        </div>
+        <div class="col-sm-6">
+          <%= link_to '新增作品集', new_admin_project_path, class: "btn btn-success float-end" %>
+        </div>
+      </div>
+    </div>
 
-<p style="color: green"><%= flash[:notice] %></p>
-<p style="color: red"><%= flash[:alert] %></p>
+    <table class="table table-hover align-middle">
+      <thead>
+        <tr>
+          <th class="text-center">標題</th>
+          <th class="text-center">描述</th>
+          <th class="text-center">連結</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @projects.each do |project| %>
+          <tr>
+            <td><%= project.title %></td>
+            <td><%= project.description %></td>
+            <td><%= project.link %></td>
+            <td><%= link_to "編輯", edit_admin_project_path(project), class: "btn btn-outline-secondary text-nowrap align-center" %></td>
+            <td><%= button_to "刪除", admin_project_path(project), class: "btn btn-danger text-nowrap", method: :delete, form: { data: { turbo_confirm: "Are you sure?" } } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" method: :delete>Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
